@@ -4,5 +4,5 @@ const { app, BrowserWindow } = electron;
 
 app.on('ready', () => {
     const mainWindow = new BrowserWindow({});
-    mainWindow.loadURL('https://mhall.xyz');
+    mainWindow.loadURL(`file://${__dirname}/index.html`);
 });
